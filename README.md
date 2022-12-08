@@ -2,4 +2,4 @@
 Deep Learning Utils
 
 
-train_template.py: simple version of pytorch train and eval
+base_architecture: simple baseline architecture of pytorch training
