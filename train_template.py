@@ -102,7 +102,7 @@ if __name__ == '__main__':
         pretrained_dict = {k: v for k, v in checkpoint.items()
                            if k in net.module.state_dict().keys()}
         net.module.load_state_dict(pretrained_dict)
-
+        start_epoch = resume_epoch -1
 
     normalize = Transform.Normalize(
         mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
